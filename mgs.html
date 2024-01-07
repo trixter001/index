@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Login</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 138, 212, 255);
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 65%;
+}
+
+.header {
+  background-color: hsl(0, 0%, 92%);
+}
+
+.header h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.form {
+  padding: 20px 30px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid #f0f0f0;
+}
+
+.form-control i {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.form button {
+  margin-top: 21%;
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 138, 212, 255);
+  color: white;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form-control.success input {
+  border-color: rgb(48, 207, 48);
+}
+
+.form-control.success .fa-check-circle {
+  visibility: visible;
+  color: rgb(48, 207, 48);
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+.form-control.error .fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: red;
+}
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Staff Login</h2>
+      </div>
+      <form class="form" id="form" action="C:\Users\NStyle User\Desktop\New folder (2)\index.html">
+        <div class="form-control">
+          <label for="user-id">User ID</label>
+          <input type="text" id="user-id" placeholder="Enter user-id" name="user-id" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" name="password" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error Msg</small>
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
